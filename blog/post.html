@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Article de blog - Amazigh BELHADDAD">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://amazigh.dev/blog/post.html">
+    <meta property="og:title" content="Article | Amazigh BELHADDAD">
+    <meta property="og:description" content="Découvrez cet article sur le développement web et l'IA.">
+    <meta property="og:image" content="https://amazigh.dev/assets/images/og-image.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Article | Amazigh BELHADDAD">
+    <meta name="twitter:description" content="Découvrez cet article sur le développement web et l'IA.">
+    <meta name="twitter:image" content="https://amazigh.dev/assets/images/og-image.png">
+
+    <title>Article | Amazigh BELHADDAD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="../css/style.css" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Aller au contenu principal</a>
+    <header class="header">
+        <nav class="nav">
+            <a href="../index.html" class="nav__logo">AB</a>
+            <button class="theme-toggle" aria-label="Basculer le thème">
+                <svg class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <svg class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+            <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="../index.html#about" class="nav__link">À propos</a></li>
+                <li class="nav__item"><a href="../index.html#projects" class="nav__link">Projets</a></li>
+                <li class="nav__item"><a href="./" class="nav__link nav__link--active">Blog</a></li>
+                <li class="nav__item"><a href="../index.html#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <article class="post">
+            <a href="./" class="post__back"><span aria-hidden="true">←</span> Retour au blog</a>
+            <div class="post__content" id="post-content" aria-live="polite">
+                <p class="blog__loading" role="status">Chargement de l'article...</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">© 2026 Amazigh BELHADDAD</p>
+        <ul class="footer__links">
+            <li><a href="https://github.com/I-Tayri" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (s'ouvre dans un nouvel onglet)</span></a></li>
+            <li><a href="https://www.linkedin.com/in/amazighbelhaddad" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (s'ouvre dans un nouvel onglet)</span></a></li>
+        </ul>
+        <p class="footer__credit">Construit avec Claude Code</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/blog.js"></script>
+</body>
+</html>

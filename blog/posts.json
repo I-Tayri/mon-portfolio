@@ -1,0 +1,11 @@
+{
+  "posts": [
+    {
+      "slug": "construire-portfolio-claude-code",
+      "title": "Comment j'ai construit mon portfolio avec Claude Code",
+      "date": "2026-02-07",
+      "excerpt": "Retour d'expérience sur la création d'un portfolio développeur en utilisant l'IA comme assistant de programmation.",
+      "tags": ["claude-code", "portfolio", "html", "css"]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "name": "notes-cli",
+      "description": "CLI pour gérer des notes en ligne de commande.",
+      "tags": ["Python", "CLI"],
+      "url": "https://github.com/I-Tayri/notes-cli"
+    },
+    {
+      "name": "hello-python",
+      "description": "Script Python simple pour apprendre les bases du langage.",
+      "tags": ["Python"],
+      "url": "https://github.com/I-Tayri/hello-python"
+    },
+    {
+      "name": "mon-portfolio",
+      "description": "Portfolio développeur construit avec Claude Code. Site statique responsive avec dark mode.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "url": "https://github.com/I-Tayri/mon-portfolio"
+    }
+  ]
+}

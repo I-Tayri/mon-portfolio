@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Amazigh BELHADDAD - Développeur en formation">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amazigh.dev/">
+    <meta property="og:title" content="Amazigh BELHADDAD | Portfolio">
+    <meta property="og:description" content="Portfolio de Amazigh BELHADDAD - Développeur en formation. Je construis des projets concrets avec l'IA.">
+    <meta property="og:image" content="https://amazigh.dev/assets/images/og-image.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://amazigh.dev/">
+    <meta name="twitter:title" content="Amazigh BELHADDAD | Portfolio">
+    <meta name="twitter:description" content="Portfolio de Amazigh BELHADDAD - Développeur en formation. Je construis des projets concrets avec l'IA.">
+    <meta name="twitter:image" content="https://amazigh.dev/assets/images/og-image.png">
+
+    <title>Amazigh BELHADDAD | Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/style.css" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Aller au contenu principal</a>
+    <header class="header">
+        <nav class="nav">
+            <a href="#hero" class="nav__logo" aria-label="Retour à l'accueil">AB</a>
+            <button class="theme-toggle" aria-label="Basculer le thème">
+                <svg class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <svg class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+            <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projets</a></li>
+                <li class="nav__item"><a href="blog/" class="nav__link">Blog</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="hero" class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Amazigh BELHADDAD</h1>
+                <h2 class="hero__subtitle">Développeur en formation</h2>
+                <p class="hero__description">Je construis des projets concrets avec l'IA.</p>
+                <a href="#projects" class="hero__cta">Voir mes projets</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2 class="section__title">À propos</h2>
+            <div class="about__content">
+                <div class="about__photo" role="img" aria-label="Photo de profil d'Amazigh BELHADDAD">
+                    <span class="about__photo-text" aria-hidden="true">Photo</span>
+                </div>
+                <div class="about__text-wrapper">
+                    <p class="about__text">
+                        Passionné par la technologie et l'intelligence artificielle,
+                        j'apprends à construire des projets concrets en utilisant les
+                        outils les plus avancés du marché. Ce portfolio est lui-même
+                        construit avec Claude Code.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="section__title">Mes Projets</h2>
+            <div class="projects__grid" id="projects-grid" aria-live="polite">
+                <p class="projects__loading" role="status">Chargement des projets...</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section__title">Me contacter</h2>
+            <form class="contact__form" id="contact-form" novalidate>
+                <div class="form__group">
+                    <label for="name" class="form__label">Nom<span class="form__required" aria-hidden="true">*</span></label>
+                    <input type="text" id="name" name="name" class="form__input" required autocomplete="name" aria-describedby="name-error">
+                    <span id="name-error" class="form__error" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form__group">
+                    <label for="email" class="form__label">Email<span class="form__required" aria-hidden="true">*</span></label>
+                    <input type="email" id="email" name="email" class="form__input" required autocomplete="email" aria-describedby="email-error">
+                    <span id="email-error" class="form__error" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form__group">
+                    <label for="message" class="form__label">Message<span class="form__required" aria-hidden="true">*</span></label>
+                    <textarea id="message" name="message" class="form__textarea" required aria-describedby="message-error"></textarea>
+                    <span id="message-error" class="form__error" role="alert" aria-live="polite"></span>
+                </div>
+                <button type="submit" class="form__button">Envoyer</button>
+                <div id="form-status" role="status" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">© 2026 Amazigh BELHADDAD</p>
+        <ul class="footer__links">
+            <li><a href="https://github.com/I-Tayri" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (s'ouvre dans un nouvel onglet)</span></a></li>
+            <li><a href="https://www.linkedin.com/in/amazighbelhaddad" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (s'ouvre dans un nouvel onglet)</span></a></li>
+        </ul>
+        <p class="footer__credit">Construit avec Claude Code</p>
+    </footer>
+
+    <noscript>
+        <p style="padding: 2rem; text-align: center; background: #1a1a1a; color: #e0e0e0;">
+            JavaScript est requis pour une expérience optimale.
+        </p>
+    </noscript>
+    <script src="js/main.js"></script>
+</body>
+</html>
