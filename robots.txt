@@ -1,6 +1,7 @@
-# robots.txt for amazigh.dev
+# robots.txt pour amazigh.dev
+
 User-agent: *
 Allow: /
 
-# Sitemap location
+# Sitemap
 Sitemap: https://amazigh.dev/sitemap.xml
