@@ -242,10 +242,38 @@
                 return;
             }
 
-            formStatus.innerHTML = '<p class="form__success">Message envoyé avec succès !</p>';
-            formStatus.setAttribute('tabindex', '-1');
-            formStatus.focus();
-            contactForm.reset();
+            var submitButton = contactForm.querySelector('.form__button');
+            submitButton.disabled = true;
+            submitButton.textContent = 'Envoi en cours...';
+
+            var formData = new FormData(contactForm);
+
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(function(response) {
+                if (response.ok) {
+                    formStatus.innerHTML = '<p class="form__success">Message envoyé avec succès !</p>';
+                    formStatus.setAttribute('tabindex', '-1');
+                    formStatus.focus();
+                    contactForm.reset();
+                } else {
+                    throw new Error('Erreur serveur');
+                }
+            })
+            .catch(function() {
+                formStatus.innerHTML = '<p class="form__error">Erreur lors de l\'envoi. Veuillez réessayer.</p>';
+                formStatus.setAttribute('tabindex', '-1');
+                formStatus.focus();
+            })
+            .finally(function() {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Envoyer';
+            });
         });
     }
 })();
