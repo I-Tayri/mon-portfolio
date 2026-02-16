@@ -441,16 +441,10 @@ section {
     width: var(--size-photo);
     height: var(--size-photo);
     border: 2px solid var(--color-accent);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 50%;
+    object-fit: cover;
     flex-shrink: 0;
     margin: 0 auto;
-}
-
-.about__photo-text {
-    color: var(--color-text-muted);
-    font-size: var(--font-size-lg);
 }
 
 .about__text-wrapper {
